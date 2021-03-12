@@ -16,7 +16,7 @@ import PublicIcon from '@material-ui/icons/Public';
 
 
 
-// import India from './Components/India';
+import India from './Components/India';
 // import Article from './Components/Article';
 // import News from './Components/News';
 import World from './World'
@@ -96,7 +96,7 @@ export default function ScrollableTabsButtonForce() {
         <World />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        India 
+        <India />
       </TabPanel>
       <TabPanel value={value} index={2}>
         States 
