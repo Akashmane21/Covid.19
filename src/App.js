@@ -85,7 +85,7 @@ function App() {
 
   
 </div>
-      <button onClick={gotop}><img src={top} alt=""  id="top" /></button> */}
+      <button onClick={gotop}><img src={top} alt=""  id="top" /></button> 
 
             <Footer />
     </>
