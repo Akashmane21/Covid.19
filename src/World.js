@@ -12,20 +12,21 @@ function World() {
     
     
     // async function getdata(){
-        // fetch("https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats")
-        // .then(response => {
-        //     return response.json();
-        //   }).then(data => {
+        fetch("https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats")
+        .then(response => {
+            return response.json();
+          }).then(data => {
             // Work with JSON data here
-        //     console.log(data);
+            console.log(data);
+            document.getElementById('total').innerHTML=data.data.total_cases
         //     newtotal(data.data.total_cases)
         // newactive(data.data.currently_infected)
         // newdeath(data.data.death_cases)
         // newrecover(data.data.recovery_cases)
         // newDate(data.data.last_update)
-        //   }).catch(err => {
-        //     // Do something for an error here
-          // });
+          }).catch(err => {
+            // Do something for an error here
+          });
         // const jsdata = await jsondata.json()
 //         console.log(jsdata);
         
