@@ -3,6 +3,7 @@
 import Slider from './Img_slider'
 // import './App.css';
 import './Home.css'
+import ScrollableTabsButtonForce from './Tab'
 function App() {
   return (
     <>
@@ -14,9 +15,13 @@ function App() {
 
             <div class="updates">
                <img id ="notification" src="img/notification.png" alt="" /> 
-              <h5> Stay Home🏡 Stay Safe💕</h5>
+              <h5> Stay Home🏡 Stay Safe💕</h5>  <br />
+
+
+
             </div>
             <hr />
+            <ScrollableTabsButtonForce />
     </>
   );
 }
