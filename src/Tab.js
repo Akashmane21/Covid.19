@@ -17,8 +17,8 @@ import PublicIcon from '@material-ui/icons/Public';
 
 
 import India from './Components/India';
-// import Article from './Components/Article';
-// import News from './Components/News';
+import Article from './Components/Article';
+import News from './Components/News';
 import World from './World'
 // import States from './Components/States'
 
