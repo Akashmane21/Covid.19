@@ -16,10 +16,10 @@ import PublicIcon from '@material-ui/icons/Public';
 
 
 
-import India from './Components/India';
-import Article from './Components/Article';
-import News from './Components/News';
-import World from './Components/World'
+// import India from './Components/India';
+// import Article from './Components/Article';
+// import News from './Components/News';
+// import World from './Components/World'
 // import States from './Components/States'
 
 function TabPanel(props) {
@@ -93,19 +93,19 @@ export default function ScrollableTabsButtonForce() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <World />
+        World
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <India />
+        India 
       </TabPanel>
       <TabPanel value={value} index={2}>
         States 
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <News />
+        News 
       </TabPanel>
       <TabPanel value={value} index={4}>
-        <Article />
+        Article 
       </TabPanel>
       <TabPanel value={value} index={5}>
         Item Six
