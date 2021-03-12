@@ -1,28 +1,19 @@
 // import logo from './logo.svg';
 import Home from './home'
 import Slider from './Img_slider'
-import './App.css';
+// import './App.css';
+import './Home.css'
 import AcUnitIcon from '@material-ui/icons/AcUnit';
 function App() {
   return (
-    <div className="App">
+    <>
     <Slider />
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-        <AcUnitIcon />
-         <Home />
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div class="head">
+                <h2>Covid-19 Outbreak in World / India</h2>
+                <img src="img/corona2.png" alt="" />
+            </div>
+            <hr />
+    </>
   );
 }
 
