@@ -9,24 +9,30 @@ function World() {
     const [death,newdeath] = useState("Fetching..");
     const [recover,newrecover] = useState("Fetching..");
     const [Date,newDate] = useState("Fetching..");
-    async function getdata(){
-        const jsondata = await fetch("https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats");
-        const jsdata = await jsondata.json()
-        console.log(jsdata);
-        newtotal(jsdata.data.total_cases)
-        newactive(jsdata.data.currently_infected)
-        newdeath(jsdata.data.death_cases)
-        newrecover(jsdata.data.recovery_cases)
-        newDate(jsdata.data.last_update)
+    
+    
+    // async function getdata(){
+        fetch("https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats")
+        .then(response => {
+            return response.json();
+          }).then(data => {
+            // Work with JSON data here
+            console.log(data);
+            newtotal(data.data.total_cases)
+        newactive(data.data.currently_infected)
+        newdeath(data.data.death_cases)
+        newrecover(data.data.recovery_cases)
+        newDate(data.data.last_update)
+          }).catch(err => {
+            // Do something for an error here
+          });
+        // const jsdata = await jsondata.json()
+//         console.log(jsdata);
+        
 
+//     }
 
-
-        // const jsondat = await fetch("https://www.mohfw.gov.in/data/datanew.json");
-        // const jsdat = await jsondat.json()
-        // console.log(jsdat);
-    }
-
- getdata();
+//  getdata();
 
 
   return (
