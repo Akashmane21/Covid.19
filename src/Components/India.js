@@ -1,5 +1,4 @@
 import '../Home.css';
-import react from 'react';
 import { useState } from 'react/cjs/react.development';
 
 
@@ -22,6 +21,12 @@ function India() {
         newdeath(jsdat[36].new_death)
         newrecover(jsdat[36].new_cured)
        
+        const jsondata = await fetch("https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats");
+        const jsdata = await jsondata.json()
+        console.log(jsdata);
+        
+        newDate(jsdata.data.last_update)
+
 
 
 

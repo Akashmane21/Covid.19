@@ -1,5 +1,4 @@
 import '../Home.css';
-import react from 'react';
 import { useState } from 'react/cjs/react.development';
 
 function States() {
