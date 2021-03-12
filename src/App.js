@@ -2,6 +2,7 @@
 // import Home from './home'
 import Slider from './Img_slider'
 // import './App.css';
+import map from './map.png'
 import './Home.css'
 import Footer from './Components/Footer'
 import ScrollableTabsButtonForce from './Tab'
@@ -23,6 +24,11 @@ function App() {
             </div>
             <hr />
             <ScrollableTabsButtonForce />
+
+            <div class="map">
+    <h4>Covid-19 Pandemic in Different Regions in India Are Shown Below in the MAP : </h4>
+    <img id="map" src={map} alt="" />
+</div>
             <Footer />
     </>
   );
