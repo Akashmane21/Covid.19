@@ -12,19 +12,19 @@ function App() {
 
 
 
-  function send(){
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwunSCg4dv6spf-fDmMk4gMjvSDqaVfMsJ2GseAt-bjpD9HTS7ANN71FR-g9vfmUKhQ/exec'
-              const form = document.forms['google-sheet']
+  // function send(){
+  //   const scriptURL = 'https://script.google.com/macros/s/AKfycbwunSCg4dv6spf-fDmMk4gMjvSDqaVfMsJ2GseAt-bjpD9HTS7ANN71FR-g9vfmUKhQ/exec'
+  //             const form = document.forms['google-sheet']
             
-              form.addEventListener('submit', e => {
-                  alert("Your Data📝 is Sending.... plz Wait💕")
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                  .then(response => alert("Thanks for Contacting📞 me..! I Will Contact You Soon...💖"))
-                  .catch(error => console.error('Error!', error.message))
-              })
+  //             form.addEventListener('submit', e => {
+  //                 alert("Your Data📝 is Sending.... plz Wait💕")
+  //               e.preventDefault()
+  //               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  //                 .then(response => alert("Thanks for Contacting📞 me..! I Will Contact You Soon...💖"))
+  //                 .catch(error => console.error('Error!', error.message))
+  //             })
   
-            }
+  //           }
   
   
   
@@ -70,7 +70,9 @@ function App() {
 
 
         <div class="form">
-            <form method="post" autocomplete="off" name="google-sheet">
+        {/* autocomplete="off" name="google-sheet"
+         */}
+            <form method="post">
                 <h6>Name</h6>
                 <input type="text" name="Name" placeholder="Enter your Name" />
                 <h6>Email</h6>
@@ -79,8 +81,8 @@ function App() {
                 <input type="phone" name="Phone" placeholder="Enter your Phone Number" />
                 
                 <h6>Message</h6>
-                <textarea name = "Message" placeholder="Enter msg here !" name="ta" id="ta" cols="25" rows="3"></textarea>
-                <button onClick={send} id="send">Send</button>
+                <textarea name = "Message" placeholder="Enter msg here !" name="ta" id="ta" cols="25" rows="3" />
+                <button  id="send">Send</button>
             </form>
         </div>
 
