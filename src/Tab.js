@@ -102,10 +102,10 @@ export default function ScrollableTabsButtonForce() {
         States 
       </TabPanel>
       <TabPanel value={value} index={3}>
-        News 
+        <News /> 
       </TabPanel>
       <TabPanel value={value} index={4}>
-        Article 
+        <Article /> 
       </TabPanel>
       <TabPanel value={value} index={5}>
         Item Six
