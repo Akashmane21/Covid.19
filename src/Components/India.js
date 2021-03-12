@@ -36,6 +36,21 @@ function India() {
     }
 
  getdata();
+
+
+
+ fetch("https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats")
+ .then(response => {
+     return response.json();
+   }).then(data => {
+     console.log(data);
+   
+     document.getElementById('date').innerHTML=` Last updated on ${data.data.last_update}`
+
+   }).catch(err => {
+     console.log(err);
+   });
+
   return (
       <>
 
@@ -43,7 +58,7 @@ function India() {
 
 <div class="dateinfo">
     <pan>INDIA</pan><br />
-    <date>Last Updated on {Date}</date>
+    <date id="date" >Last Updated on </date>
 </div>
 
 <div class="first"  id="box">

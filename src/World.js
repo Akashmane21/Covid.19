@@ -4,40 +4,26 @@ import './Home.css';
 
 function World() {
 
-    // const [total,newtotal] = useState("Fetching..");
-    // const [active,newactive] = useState("Fetching..");
-    // const [death,newdeath] = useState("Fetching..");
-    // const [recover,newrecover] = useState("Fetching..");
-    // const [Date,newDate] = useState("Fetching..");
+
     
-    
-    // async function getdata(){
         fetch("https://corona-virus-stats.herokuapp.com/api/v1/cases/general-stats")
         .then(response => {
             return response.json();
           }).then(data => {
-            // Work with JSON data here
             console.log(data);
             document.getElementById('total').innerHTML=data.data.total_cases
             document.getElementById('active').innerHTML=data.data.currently_infected
             document.getElementById('recover').innerHTML =data.data.recovery_cases
             document.getElementById('death').innerHTML=data.data.death_cases
-            document.getElementById('date').innerHTML=data.data.last_update
-        //     newtotal(data.data.total_cases)
-        // newactive(data.data.currently_infected)
-        // newdeath(data.data.death_cases)
-        // newrecover(data.data.recovery_cases)
-        // newDate(data.data.last_update)
+            // document.getElementById('date').innerHTML=data.data.last_update
+            document.getElementById('date').innerHTML=` Last updated on ${data.data.last_update}`
+
           }).catch(err => {
-            // Do something for an error here
+            console.log(err);
           });
-        // const jsdata = await jsondata.json()
-//         console.log(jsdata);
-        
+ 
 
-//     }
 
-//  getdata();
 
 
   return (
