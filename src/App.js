@@ -14,7 +14,7 @@ function App() {
 
             <div class="updates">
                <img id ="notification" src="img/notification.png" alt="" /> 
-              <marquee behavior="smooth" direction="left"> <h5> Stay Home🏡 Stay Safe💕</h5></marquee>
+              <h5> Stay Home🏡 Stay Safe💕</h5>
             </div>
             <hr />
     </>
