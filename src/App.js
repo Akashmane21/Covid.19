@@ -5,6 +5,7 @@ import Slider from './Img_slider'
 import map from './map.png'
 import './Home.css'
 import top from './top.png'
+import logo from './corona2.png'
 import Footer from './Components/Footer'
 import ScrollableTabsButtonForce from './Tab'
 function App() {
@@ -39,7 +40,7 @@ function App() {
     <Slider />
     <div class="head">
                 <h2>Covid-19 Outbreak in World / India</h2>
-                <img src="img/corona2.png" alt="" />
+                <img src={logo} alt="" />
             </div>
 
             <div class="updates">
