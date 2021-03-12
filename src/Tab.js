@@ -19,7 +19,7 @@ import PublicIcon from '@material-ui/icons/Public';
 // import India from './Components/India';
 // import Article from './Components/Article';
 // import News from './Components/News';
-// import World from './Components/World'
+import World from './Components/World'
 // import States from './Components/States'
 
 function TabPanel(props) {
@@ -93,7 +93,7 @@ export default function ScrollableTabsButtonForce() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        World
+        <World />
       </TabPanel>
       <TabPanel value={value} index={1}>
         India 
