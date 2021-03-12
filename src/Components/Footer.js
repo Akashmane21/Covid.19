@@ -1,5 +1,5 @@
 import '../Home.css';
-
+import img from '../footer_dp.jpg'
 function Footer() {
   return (
       <>
@@ -7,7 +7,7 @@ function Footer() {
         <div class="container p-4">
         
          <div class="row">
-         <img src="img/footer_dp.jpg" alt="" id="footerdp"/>
+         <img src={img} alt="" id="footerdp"/>
      
            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
              <h5 class="text-uppercase">Akash Mane</h5>
@@ -47,7 +47,7 @@ function Footer() {
      
        <div class="text-center p-3" >
          © 2021 Copyright:
-         <a class="text-white" href="https://akashmane21.github.io/Akash/">https://akashmane21.github.io/Akash/</a>
+         <a class="text-white" href="https://akashmane21.github.io/Akash/">https://covid19updatelive.netlify.app/</a>
        </div>
         
      </footer>

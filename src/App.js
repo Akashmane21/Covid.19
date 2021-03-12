@@ -3,6 +3,7 @@
 import Slider from './Img_slider'
 // import './App.css';
 import './Home.css'
+import Footer from './Components/Footer'
 import ScrollableTabsButtonForce from './Tab'
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             </div>
             <hr />
             <ScrollableTabsButtonForce />
+            <Footer />
     </>
   );
 }
