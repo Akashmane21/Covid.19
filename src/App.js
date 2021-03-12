@@ -1,10 +1,12 @@
 // import logo from './logo.svg';
 import Home from './home'
+import Slider from './Img_slider'
 import './App.css';
 import AcUnitIcon from '@material-ui/icons/AcUnit';
 function App() {
   return (
     <div className="App">
+    <Slider />
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <p>
