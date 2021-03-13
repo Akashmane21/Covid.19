@@ -47,7 +47,7 @@ function Footer() {
      
        <div class="text-center p-3" >
          © 2021 Copyright:
-         <a class="text-white" href="https://akashmane21.github.io/Akash/">https://covid19updatelive.netlify.app/</a>
+         <a class="text-white" href="https://akashmane21.github.io/Akash/">https://covid19-live-updates.netlify.app/</a>
        </div>
         
      </footer>
