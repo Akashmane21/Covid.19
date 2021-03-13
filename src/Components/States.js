@@ -37,7 +37,7 @@ function States() {
   .then(response => {
       return response.json();
     }).then(data => {
-      console.log(data);
+      // console.log(data);
       document.getElementById('anc').innerHTML =data.AN.total.confirmed
       document.getElementById('ant').innerHTML =data.AN.total.tested
       document.getElementById('and').innerHTML =data.AN.total.deceased
@@ -63,209 +63,209 @@ function States() {
       document.getElementById('asd').innerHTML =data.AS.total.deceased
       document.getElementById('asv').innerHTML =data.AS.total.vaccinated
       document.getElementById('asr').innerHTML =data.AS.total.recovered
+
+      document.getElementById('BRC').innerHTML =data.BR.total.confirmed
+      document.getElementById('BRT').innerHTML =data.BR.total.tested
+      document.getElementById('BRD').innerHTML =data.BR.total.deceased
+      document.getElementById('BRV').innerHTML =data.BR.total.vaccinated
+      document.getElementById('BRR').innerHTML =data.BR.total.recovered
   
-    
+      document.getElementById('CHC').innerHTML =data.CH.total.confirmed
+      document.getElementById('CHT').innerHTML =data.CH.total.tested
+      document.getElementById('CHD').innerHTML =data.CH.total.deceased
+      document.getElementById('CHV').innerHTML =data.CH.total.vaccinated
+      document.getElementById('CHR').innerHTML =data.CH.total.recovered
+  
+      document.getElementById('CTC').innerHTML =data.CT.total.confirmed
+      document.getElementById('CTT').innerHTML =data.CT.total.tested
+      document.getElementById('CTD').innerHTML =data.CT.total.deceased
+      document.getElementById('CTV').innerHTML =data.CT.total.vaccinated
+      document.getElementById('CTR').innerHTML =data.CT.total.recovered
+  
+
+      document.getElementById('DNC').innerHTML =data.DN.total.confirmed
+      document.getElementById('DNT').innerHTML =data.DN.total.tested
+      document.getElementById('DND').innerHTML =data.DN.total.deceased
+      document.getElementById('DNV').innerHTML =data.DN.total.vaccinated
+      document.getElementById('DNR').innerHTML =data.DN.total.recovered
+  
+
+      document.getElementById('DLC').innerHTML =data.DL.total.confirmed
+      document.getElementById('DLT').innerHTML =data.DL.total.tested
+      document.getElementById('DLD').innerHTML =data.DL.total.deceased
+      document.getElementById('DLV').innerHTML =data.DL.total.vaccinated
+      document.getElementById('DLR').innerHTML =data.DL.total.recovered
+  
+
+      document.getElementById('GAC').innerHTML =data.GA.total.confirmed
+      document.getElementById('GAT').innerHTML =data.GA.total.tested
+      document.getElementById('GAD').innerHTML =data.GA.total.deceased
+      document.getElementById('GAV').innerHTML =data.GA.total.vaccinated
+      document.getElementById('GAR').innerHTML =data.GA.total.recovered
+
+      document.getElementById('GJC').innerHTML =data.GJ.total.confirmed
+      document.getElementById('GJT').innerHTML =data.GJ.total.tested
+      document.getElementById('GJD').innerHTML =data.GJ.total.deceased
+      document.getElementById('GJV').innerHTML =data.GJ.total.vaccinated
+      document.getElementById('GJR').innerHTML =data.GJ.total.recovered
+  
+      document.getElementById('HRC').innerHTML =data.HR.total.confirmed
+      document.getElementById('HRT').innerHTML =data.HR.total.tested
+      document.getElementById('HRD').innerHTML =data.HR.total.deceased
+      document.getElementById('HRV').innerHTML =data.HR.total.vaccinated
+      document.getElementById('HRR').innerHTML =data.HR.total.recovered
+  
+      document.getElementById('HPC').innerHTML =data.HP.total.confirmed
+      document.getElementById('HPT').innerHTML =data.HP.total.tested
+      document.getElementById('HPD').innerHTML =data.HP.total.deceased
+      document.getElementById('HPV').innerHTML =data.HP.total.vaccinated
+      document.getElementById('HPR').innerHTML =data.HP.total.recovered
+  
+
+      document.getElementById('JKC').innerHTML =data.JK.total.confirmed
+      document.getElementById('JKT').innerHTML =data.JK.total.tested
+      document.getElementById('JKD').innerHTML =data.JK.total.deceased
+      document.getElementById('JKV').innerHTML =data.JK.total.vaccinated
+      document.getElementById('JKR').innerHTML =data.JK.total.recovered
+  
+
+      document.getElementById('JHC').innerHTML =data.JH.total.confirmed
+      document.getElementById('JHT').innerHTML =data.JH.total.tested
+      document.getElementById('JHD').innerHTML =data.JH.total.deceased
+      document.getElementById('JHV').innerHTML =data.JH.total.vaccinated
+      document.getElementById('JHR').innerHTML =data.JH.total.recovered
+
+      
+      document.getElementById('KAC').innerHTML =data.KA.total.confirmed
+      document.getElementById('KAT').innerHTML =data.KA.total.tested
+      document.getElementById('KAD').innerHTML =data.KA.total.deceased
+      document.getElementById('KAV').innerHTML =data.KA.total.vaccinated
+      document.getElementById('KAR').innerHTML =data.KA.total.recovered
+
+      document.getElementById('KLC').innerHTML =data.KL.total.confirmed
+      document.getElementById('KLT').innerHTML =data.KL.total.tested
+      document.getElementById('KLD').innerHTML =data.KL.total.deceased
+      document.getElementById('KLV').innerHTML =data.KL.total.vaccinated
+      document.getElementById('KLR').innerHTML =data.KL.total.recovered
+  
+
+      document.getElementById('LDC').innerHTML =data.LD.total.confirmed
+      document.getElementById('LDT').innerHTML =data.LD.total.tested
+      document.getElementById('LDD').innerHTML =data.LD.total.deceased
+      document.getElementById('LDV').innerHTML =data.LD.total.vaccinated
+      document.getElementById('LDR').innerHTML =data.LD.total.recovered
+
+      document.getElementById('MPC').innerHTML =data.MP.total.confirmed
+      document.getElementById('MPT').innerHTML =data.MP.total.tested
+      document.getElementById('MPD').innerHTML =data.MP.total.deceased
+      document.getElementById('MPV').innerHTML =data.MP.total.vaccinated
+      document.getElementById('MPR').innerHTML =data.MP.total.recovered
+
+      document.getElementById('MHC').innerHTML =data.MH.total.confirmed
+      document.getElementById('MHT').innerHTML =data.MH.total.tested
+      document.getElementById('MHD').innerHTML =data.MH.total.deceased
+      document.getElementById('MHV').innerHTML =data.MH.total.vaccinated
+      document.getElementById('MHR').innerHTML =data.MH.total.recovered
+
+      document.getElementById('MLC').innerHTML =data.ML.total.confirmed
+      document.getElementById('MLT').innerHTML =data.ML.total.tested
+      document.getElementById('MLD').innerHTML =data.ML.total.deceased
+      document.getElementById('MLV').innerHTML =data.ML.total.vaccinated
+      document.getElementById('MLR').innerHTML =data.ML.total.recovered
+
+      document.getElementById('MZC').innerHTML =data.MZ.total.confirmed
+      document.getElementById('MZT').innerHTML =data.MZ.total.tested
+      document.getElementById('MZD').innerHTML =data.MZ.total.deceased
+      document.getElementById('MZV').innerHTML =data.MZ.total.vaccinated
+      document.getElementById('MZR').innerHTML =data.MZ.total.recovered
+
+
+      document.getElementById('MNC').innerHTML =data.MN.total.confirmed
+      document.getElementById('MNT').innerHTML =data.MN.total.tested
+      document.getElementById('MND').innerHTML =data.MN.total.deceased
+      document.getElementById('MNV').innerHTML =data.MN.total.vaccinated
+      document.getElementById('MNR').innerHTML =data.MN.total.recovered
+
+
+      document.getElementById('NLC').innerHTML =data.NL.total.confirmed
+      document.getElementById('NLT').innerHTML =data.NL.total.tested
+      document.getElementById('NLD').innerHTML =data.NL.total.deceased
+      document.getElementById('NLV').innerHTML =data.NL.total.vaccinated
+      document.getElementById('NLR').innerHTML =data.NL.total.recovered
+
+      document.getElementById('ORC').innerHTML =data.OR.total.confirmed
+      document.getElementById('ORT').innerHTML =data.OR.total.tested
+      document.getElementById('ORD').innerHTML =data.OR.total.deceased
+      document.getElementById('ORV').innerHTML =data.OR.total.vaccinated
+      document.getElementById('ORR').innerHTML =data.OR.total.recovered
+
+      document.getElementById('PYC').innerHTML =data.PY.total.confirmed
+      document.getElementById('PYT').innerHTML =data.PY.total.tested
+      document.getElementById('PYD').innerHTML =data.PY.total.deceased
+      document.getElementById('PYV').innerHTML =data.PY.total.vaccinated
+      document.getElementById('PYR').innerHTML =data.PY.total.recovered
+
+      document.getElementById('PBC').innerHTML =data.PB.total.confirmed
+      document.getElementById('PBT').innerHTML =data.PB.total.tested
+      document.getElementById('PBD').innerHTML =data.PB.total.deceased
+      document.getElementById('PBV').innerHTML =data.PB.total.vaccinated
+      document.getElementById('PBR').innerHTML =data.PB.total.recovered
+
+      document.getElementById('RJC').innerHTML =data.RJ.total.confirmed
+      document.getElementById('RJT').innerHTML =data.RJ.total.tested
+      document.getElementById('RJD').innerHTML =data.RJ.total.deceased
+      document.getElementById('RJV').innerHTML =data.RJ.total.vaccinated
+      document.getElementById('RJR').innerHTML =data.RJ.total.recovered
+
+
+      document.getElementById('SKC').innerHTML =data.SK.total.confirmed
+      document.getElementById('SKT').innerHTML =data.SK.total.tested
+      document.getElementById('SKD').innerHTML =data.SK.total.deceased
+      document.getElementById('SKV').innerHTML =data.SK.total.vaccinated
+      document.getElementById('SKR').innerHTML =data.SK.total.recovered
+
+
+      document.getElementById('TNC').innerHTML =data.TN.total.confirmed
+      document.getElementById('TNT').innerHTML =data.TN.total.tested
+      document.getElementById('TND').innerHTML =data.TN.total.deceased
+      document.getElementById('TNV').innerHTML =data.TN.total.vaccinated
+      document.getElementById('TNR').innerHTML =data.TN.total.recovered
+
+      document.getElementById('TGC').innerHTML =data.TG.total.confirmed
+      document.getElementById('TGT').innerHTML =data.TG.total.tested
+      document.getElementById('TGD').innerHTML =data.TG.total.deceased
+      document.getElementById('TGV').innerHTML =data.TG.total.vaccinated
+      document.getElementById('TGR').innerHTML =data.TG.total.recovered
+
+      document.getElementById('TRC').innerHTML =data.TR.total.confirmed
+      document.getElementById('TRT').innerHTML =data.TR.total.tested
+      document.getElementById('TRD').innerHTML =data.TR.total.deceased
+      document.getElementById('TRV').innerHTML =data.TR.total.vaccinated
+      document.getElementById('TRR').innerHTML =data.TR.total.recovered
+
+      document.getElementById('UPC').innerHTML =data.UP.total.confirmed
+      document.getElementById('UPT').innerHTML =data.UP.total.tested
+      document.getElementById('UPD').innerHTML =data.UP.total.deceased
+      document.getElementById('UPV').innerHTML =data.UP.total.vaccinated
+      document.getElementById('UPR').innerHTML =data.UP.total.recovered
+
+
+      document.getElementById('UTC').innerHTML =data.UT.total.confirmed
+      document.getElementById('UTT').innerHTML =data.UT.total.tested
+      document.getElementById('UTD').innerHTML =data.UT.total.deceased
+      document.getElementById('UTV').innerHTML =data.UT.total.vaccinated
+      document.getElementById('UTR').innerHTML =data.UT.total.recovered
+
+      document.getElementById('WBC').innerHTML =data.WB.total.confirmed
+      document.getElementById('WBT').innerHTML =data.WB.total.tested
+      document.getElementById('WBD').innerHTML =data.WB.total.deceased
+      document.getElementById('WBV').innerHTML =data.WB.total.vaccinated
+      document.getElementById('WBR').innerHTML =data.WB.total.recovered
+
+
     })
+ 
 
-
-  
-     
- 
-  
- 
-  //    newasc(jsdata.AS.total.confirmed)
-  //    newast(jsdata.AS.total.tested)
-  //    newasd(jsdata.AS.total.deceased)
-  //    newasv(jsdata.AS.total.vaccinated)
-  //    newasr(jsdata.AS.total.recovered)
- 
-  //    newBRC(jsdata.BR.total.confirmed)
-  //    newBRT(jsdata.BR.total.tested)
-  //    newBRD(jsdata.BR.total.deceased)
-  //    newBRV(jsdata.BR.total.vaccinated)
-  //    newBRR(jsdata.BR.total.recovered)
- 
-  //    newCHC(jsdata.CH.total.confirmed)
-  //    newCHT(jsdata.CH.total.tested)
-  //    newCHD(jsdata.CH.total.deceased)
-  //    newCHV(jsdata.CH.total.vaccinated)
-  //    newCHR(jsdata.CH.total.recovered)
- 
-  //    newCTC(jsdata.CT.total.confirmed)
-  //    newCTT(jsdata.CT.total.tested)
-  //    newCTD(jsdata.CT.total.deceased)
-  //    newCTV(jsdata.CT.total.vaccinated)
-  //    newCTR(jsdata.CT.total.recovered)
- 
-  //    newDNC(jsdata.DN.total.confirmed)
-  //    newDNT(jsdata.DN.total.tested)
-  //    newDND(jsdata.DN.total.deceased)
-  //    newDNV(jsdata.DN.total.vaccinated)
-  //    newDNR(jsdata.DN.total.recovered)
- 
-  //    newDLC(jsdata.DL.total.confirmed)
-  //    newDLT(jsdata.DL.total.tested)
-  //    newDLD(jsdata.DL.total.deceased)
-  //    newDLV(jsdata.DL.total.vaccinated)
-  //    newDLR(jsdata.DL.total.recovered)
- 
-  //    newGAC(jsdata.GA.total.confirmed)
-  //    newGAT(jsdata.GA.total.tested)
-  //    newGAD(jsdata.GA.total.deceased)
-  //    newGAV(jsdata.GA.total.vaccinated)
-  //    newGAR(jsdata.GA.total.recovered)
- 
-  //    newGJC(jsdata.GJ.total.confirmed)
-  //    newGJT(jsdata.GJ.total.tested)
-  //    newGJD(jsdata.GJ.total.deceased)
-  //    newGJV(jsdata.GJ.total.vaccinated)
-  //    newGJR(jsdata.GJ.total.recovered)
- 
-  //    newHRC(jsdata.HR.total.confirmed)
-  //    newHRT(jsdata.HR.total.tested)
-  //    newHRD(jsdata.HR.total.deceased)
-  //    newHRV(jsdata.HR.total.vaccinated)
-  //    newHRR(jsdata.HR.total.recovered)
- 
-  //    newHPC(jsdata.HP.total.confirmed)
-  //    newHPT(jsdata.HP.total.tested)
-  //    newHPD(jsdata.HP.total.deceased)
-  //    newHPV(jsdata.HP.total.vaccinated)
-  //    newHPR(jsdata.HP.total.recovered)
- 
-  //    newJKC(jsdata.JK.total.confirmed)
-  //    newJKT(jsdata.JK.total.tested)
-  //    newJKD(jsdata.JK.total.deceased)
-  //    newJKV(jsdata.JK.total.vaccinated)
-  //    newJKR(jsdata.JK.total.recovered)
- 
-  //    newJHC(jsdata.JH.total.confirmed)
-  //    newJHT(jsdata.JH.total.tested)
-  //    newJHD(jsdata.JH.total.deceased)
-  //    newJHV(jsdata.JH.total.vaccinated)
-  //    newJHR(jsdata.JH.total.recovered)
- 
-  //    newKAC(jsdata.KA.total.confirmed)
-  //    newKAT(jsdata.KA.total.tested)
-  //    newKAD(jsdata.KA.total.deceased)
-  //    newKAV(jsdata.KA.total.vaccinated)
-  //    newKAR(jsdata.KA.total.recovered)
- 
-  //    newKLC(jsdata.KL.total.confirmed)
-  //    newKLT(jsdata.KL.total.tested)
-  //    newKLD(jsdata.KL.total.deceased)
-  //    newKLV(jsdata.KL.total.vaccinated)
-  //    newKLR(jsdata.KL.total.recovered)
- 
-  //    newLDC(jsdata.LD.total.confirmed)
-  //    newLDT(jsdata.LD.total.tested)
-  //    newLDD(jsdata.LD.total.deceased)
-  //    newLDV(jsdata.LD.total.vaccinated)
-  //    newLDR(jsdata.LD.total.recovered)
- 
-  //    newMPC(jsdata.MP.total.confirmed)
-  //    newMPT(jsdata.MP.total.tested)
-  //    newMPD(jsdata.MP.total.deceased)
-  //    newMPV(jsdata.MP.total.vaccinated)
-  //    newMPR(jsdata.MP.total.recovered)
- 
-  //    newMHC(jsdata.MH.total.confirmed)
-  //    newMHT(jsdata.MH.total.tested)
-  //    newMHD(jsdata.MH.total.deceased)
-  //    newMHV(jsdata.MH.total.vaccinated)
-  //    newMHR(jsdata.MH.total.recovered)
- 
-  //    newMLC(jsdata.ML.total.confirmed)
-  //    newMLT(jsdata.ML.total.tested)
-  //    newMLD(jsdata.ML.total.deceased)
-  //    newMLV(jsdata.ML.total.vaccinated)
-  //    newMLR(jsdata.ML.total.recovered)
- 
-  //    newMZC(jsdata.MZ.total.confirmed)
-  //    newMZT(jsdata.MZ.total.tested)
-  //    newMZD(jsdata.MZ.total.deceased)
-  //    newMZV(jsdata.MZ.total.vaccinated)
-  //    newMZR(jsdata.MZ.total.recovered)
- 
-  //    newMNC(jsdata.MN.total.confirmed)
-  //    newMNT(jsdata.MN.total.tested)
-  //    newMND(jsdata.MN.total.deceased)
-  //    newMNV(jsdata.MN.total.vaccinated)
-  //    newMNR(jsdata.MN.total.recovered)
- 
-  //    newNLC(jsdata.NL.total.confirmed)
-  //    newNLT(jsdata.NL.total.tested)
-  //    newNLD(jsdata.NL.total.deceased)
-  //    newNLV(jsdata.NL.total.vaccinated)
-  //    newNLR(jsdata.NL.total.recovered)
- 
-  //    newORC(jsdata.OR.total.confirmed)
-  //    newORT(jsdata.OR.total.tested)
-  //    newORD(jsdata.OR.total.deceased)
-  //    newORV(jsdata.OR.total.vaccinated)
-  //    newORR(jsdata.OR.total.recovered)
- 
-  //    newPYC(jsdata.PY.total.confirmed)
-  //    newPYT(jsdata.PY.total.tested)
-  //    newPYD(jsdata.PY.total.deceased)
-  //    newPYV(jsdata.PY.total.vaccinated)
-  //    newPYR(jsdata.PY.total.recovered)
- 
-  //    newPBC(jsdata.PB.total.confirmed)
-  //    newPBT(jsdata.PB.total.tested)
-  //    newPBD(jsdata.PB.total.deceased)
-  //    newPBV(jsdata.PB.total.vaccinated)
-  //    newPBR(jsdata.PB.total.recovered)
- 
-  //    newRJC(jsdata.RJ.total.confirmed)
-  //    newRJT(jsdata.RJ.total.tested)
-  //    newRJD(jsdata.RJ.total.deceased)
-  //    newRJV(jsdata.RJ.total.vaccinated)
-  //    newRJR(jsdata.RJ.total.recovered)
- 
-  //    newSKC(jsdata.SK.total.confirmed)
-  //    newSKT(jsdata.SK.total.tested)
-  //    newSKD(jsdata.SK.total.deceased)
-  //    newSKV(jsdata.SK.total.vaccinated)
-  //    newSKR(jsdata.SK.total.recovered)
- 
-  //    newTNC(jsdata.TN.total.confirmed)
-  //    newTNT(jsdata.TN.total.tested)
-  //    newTND(jsdata.TN.total.deceased)
-  //    newTNV(jsdata.TN.total.vaccinated)
-  //    newTNR(jsdata.TN.total.recovered)
- 
-  //    newTGC(jsdata.TG.total.confirmed)
-  //    newTGT(jsdata.TG.total.tested)
-  //    newTGD(jsdata.TG.total.deceased)
-  //    newTGV(jsdata.TG.total.vaccinated)
-  //    newTGR(jsdata.TG.total.recovered)
- 
-  //    newTRC(jsdata.TR.total.confirmed)
-  //    newTRT(jsdata.TR.total.tested)
-  //    newTRD(jsdata.TR.total.deceased)
-  //    newTRV(jsdata.TR.total.vaccinated)
-  //    newTRR(jsdata.TR.total.recovered)
- 
-  //    newUPC(jsdata.UP.total.confirmed)
-  //    newUPT(jsdata.UP.total.tested)
-  //    newUPD(jsdata.UP.total.deceased)
-  //    newUPV(jsdata.UP.total.vaccinated)
-  //    newUPR(jsdata.UP.total.recovered)
- 
-  //    newUTC(jsdata.UT.total.confirmed)
-  //    newUTT(jsdata.UT.total.tested)
-  //    newUTD(jsdata.UT.total.deceased)
-  //    newUTV(jsdata.UT.total.vaccinated)
-  //    newUTR(jsdata.UT.total.recovered)
- 
-  //    newWBC(jsdata.WB.total.confirmed)
-  //    newWBT(jsdata.WB.total.tested)
-  //    newWBD(jsdata.WB.total.deceased)
-  //    newWBV(jsdata.WB.total.vaccinated)
-  //    newWBR(jsdata.WB.total.recovered)
-   
- 
 
 
 
