@@ -3,6 +3,7 @@
 import Slider from './Img_slider'
 // import './App.css';
 import map from './map.png'
+import bell from './notification.png'
 import './Home.css'
 import top from './top.png'
 import logo from './corona2.png'
@@ -44,13 +45,13 @@ function App() {
             </div>
 
             <div class="updates">
-               <img id ="notification" src="img/notification.png" alt="" /> 
+               <img id ="notification" src={bell} alt="" /> 
               <h5> Stay Home🏡 Stay Safe💕</h5>  <br />
 
 
 
             </div>
-            <hr />
+            
             <ScrollableTabsButtonForce />
 
             <div class="map">
