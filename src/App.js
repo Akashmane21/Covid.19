@@ -58,7 +58,15 @@ function App() {
     <img id="map" src={map} alt="" />
 </div>
 
+<div className="msg">
+  <h2>Stay Home, Stay Safe!</h2>
+  <p>COVID-19 or as the plebs call it, the coronavirus has restricted a lot of us to our homes. You can choose to while away your time sleeping; doing nothing or you could utilize this break to ‘Learn’ something new. You know you’ve said this a lot to yourself - “I want to Learn 'X' but I can’t seem to find the time.” This is the time; Turn Your Self-Isolation into Self-Improvement!</p>
+<hr />
+<h3>With Lots of Love</h3>
+<a class="text-white" href="https://akashmane21.github.io/Akash/">     <h4> Mane Akash </h4>
+</a>
 
+</div>
 
 
 <div class="contact">

@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap');
+
 body{
   background-color: rgba(48, 156, 106, 0.61);
 }
@@ -510,4 +513,33 @@ input , textarea{
 
 #send:hover{
   background-color: rgb(75, 70, 70);
+}
+
+
+.msg{
+  background-color: rgba(228, 109, 109, 0.39);
+  padding: 20px;
+  margin: 20px;
+  font-family: 'Montserrat Alternates', sans-serif;
+font-size: 20px;
+font-weight: bold;
+  border-radius: 10px;
+  border: 1px solid chartreuse;
+}
+
+.msg > h2 {
+  font-weight: bold;
+  color: green;
+  
+}
+
+h4{
+  color: blue;
+  font-family: "Montserrat Alternates";
+font-weight: bolder;
+text-decoration: none;
+}
+
+a{
+  text-decoration: none;
 }
