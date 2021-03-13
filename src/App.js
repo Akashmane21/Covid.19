@@ -42,6 +42,7 @@ function App() {
       <div class="updates">
         <img id="notification" src={bell} alt="" />
         <h5> Stay Home🏡 Stay Safe💕</h5> <br />
+        <strong>Let's fight with Corona together! 😷</strong>
       </div>
 
       <ScrollableTabsButtonForce />
