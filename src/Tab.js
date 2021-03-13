@@ -20,7 +20,7 @@ import India from './Components/India';
 import Article from './Components/Article';
 import News from './Components/News';
 import World from './World'
-// import States from './Components/States'
+import States from './Components/States'
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -99,7 +99,7 @@ export default function ScrollableTabsButtonForce() {
         <India />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        States 
+        <States /> 
       </TabPanel>
       <TabPanel value={value} index={3}>
         <News /> 
