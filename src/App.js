@@ -69,6 +69,33 @@ function App() {
 </div>
 
 
+
+<div class="img_slider">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://www.cipla.com/sites/default/files/2020-09/covid-19-desktop-banner.jpg" alt="First slide">
+                 </img> </div>
+                  
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://prod-metropolisindia-bucket.s3.ap-south-1.amazonaws.com/images/compressed/730x399_covid_accurate_reports.jpg" alt="Third slide">
+                 </img> </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://c5.rgstatic.net/m/44004776572857147/images/communityboard/covid19-social-cover.png" alt="Third slide">
+                 </img> </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+
+
 <div class="contact">
         <h5>If you have any Query or any information about it then Feel free to ..</h5>
         <h3>Contact Me 📞💕</h3>
