@@ -33,251 +33,45 @@ function States() {
 
 
 
+  fetch("https://api.covid19india.org/v4/min/data.min.json")
+  .then(response => {
+      return response.json();
+    }).then(data => {
+      console.log(data);
+      document.getElementById('anc').innerHTML =data.AN.total.confirmed
+      document.getElementById('ant').innerHTML =data.AN.total.tested
+      document.getElementById('and').innerHTML =data.AN.total.deceased
+      document.getElementById('anv').innerHTML =data.AN.total.vaccinated
+      document.getElementById('anr').innerHTML =data.AN.total.recovered
+  
+
+      document.getElementById('arc').innerHTML =data.AR.total.confirmed
+      document.getElementById('art').innerHTML =data.AR.total.tested
+      document.getElementById('ard').innerHTML =data.AR.total.deceased
+      document.getElementById('arv').innerHTML =data.AR.total.vaccinated
+      document.getElementById('arr').innerHTML =data.AR.total.recovered
+  
+      document.getElementById('apc').innerHTML =data.AP.total.confirmed
+      document.getElementById('apt').innerHTML =data.AP.total.tested
+      document.getElementById('apd').innerHTML =data.AP.total.deceased
+      document.getElementById('apv').innerHTML =data.AP.total.vaccinated
+      document.getElementById('apr').innerHTML =data.AP.total.recovered
+  
+
+      document.getElementById('asc').innerHTML =data.AS.total.confirmed
+      document.getElementById('ast').innerHTML =data.AS.total.tested
+      document.getElementById('asd').innerHTML =data.AS.total.deceased
+      document.getElementById('asv').innerHTML =data.AS.total.vaccinated
+      document.getElementById('asr').innerHTML =data.AS.total.recovered
+  
+    
+    })
 
 
-
-
-
-  // const [anc,newanc] = useState("-/-");
-  // const [ant,newant] = useState("-/-");
-  // const [and,newand] = useState("-/-");
-  // const [anr,newanr] = useState("-/-");
-  // const [anv,newanv] = useState("-/-");
+  
+     
  
- 
- 
- 
- 
-  // const [apc,newapc] = useState("-/-");
-  // const [apt,newapt] = useState("-/-");
-  // const [apd,newapd] = useState("-/-");
-  // const [apr,newapr] = useState("-/-");
-  // const [apv,newapv] = useState("-/-");
- 
- 
-  // const [arc,newarc] = useState("-/-");
-  // const [art,newart] = useState("-/-");
-  // const [ard,neward] = useState("-/-");
-  // const [arr,newarr] = useState("-/-");
-  // const [arv,newarv] = useState("-/-");
- 
- 
-  // const [asc,newasc] = useState("-/-");
-  // const [ast,newast] = useState("-/-");
-  // const [asd,newasd] = useState("-/-");
-  // const [asr,newasr] = useState("-/-");
-  // const [asv,newasv] = useState("-/-");
- 
-  // const [BRC,newBRC] = useState("-/-");
-  // const [BRT,newBRT] = useState("-/-");
-  // const [BRD,newBRD] = useState("-/-");
-  // const [BRR,newBRR] = useState("-/-");
-  // const [BRV,newBRV] = useState("-/-");
- 
-  // const [CHC,newCHC] = useState("-/-");
-  // const [CHT,newCHT] = useState("-/-");
-  // const [CHD,newCHD] = useState("-/-");
-  // const [CHR,newCHR] = useState("-/-");
-  // const [CHV,newCHV] = useState("-/-");
- 
-  // const [CTC,newCTC] = useState("-/-");
-  // const [CTT,newCTT] = useState("-/-");
-  // const [CTD,newCTD] = useState("-/-");
-  // const [CTR,newCTR] = useState("-/-");
-  // const [CTV,newCTV] = useState("-/-");
- 
-  // const [DNC,newDNC] = useState("-/-");
-  // const [DNT,newDNT] = useState("-/-");
-  // const [DND,newDND] = useState("-/-");
-  // const [DNR,newDNR] = useState("-/-");
-  // const [DNV,newDNV] = useState("-/-");
- 
-  // const [DLC,newDLC] = useState("-/-");
-  // const [DLT,newDLT] = useState("-/-");
-  // const [DLD,newDLD] = useState("-/-");
-  // const [DLR,newDLR] = useState("-/-");
-  // const [DLV,newDLV] = useState("-/-");
- 
-  // const [GAC,newGAC] = useState("-/-");
-  // const [GAT,newGAT] = useState("-/-");
-  // const [GAD,newGAD] = useState("-/-");
-  // const [GAR,newGAR] = useState("-/-");
-  // const [GAV,newGAV] = useState("-/-");
- 
-  // const [GJC,newGJC] = useState("-/-");
-  // const [GJT,newGJT] = useState("-/-");
-  // const [GJD,newGJD] = useState("-/-");
-  // const [GJR,newGJR] = useState("-/-");
-  // const [GJV,newGJV] = useState("-/-");
- 
-  // const [HRC,newHRC] = useState("-/-");
-  // const [HRT,newHRT] = useState("-/-");
-  // const [HRD,newHRD] = useState("-/-");
-  // const [HRR,newHRR] = useState("-/-");
-  // const [HRV,newHRV] = useState("-/-");
- 
-  // const [HPC,newHPC] = useState("-/-");
-  // const [HPT,newHPT] = useState("-/-");
-  // const [HPD,newHPD] = useState("-/-");
-  // const [HPR,newHPR] = useState("-/-");
-  // const [HPV,newHPV] = useState("-/-");
- 
-  // const [JKC,newJKC] = useState("-/-");
-  // const [JKT,newJKT] = useState("-/-");
-  // const [JKD,newJKD] = useState("-/-");
-  // const [JKR,newJKR] = useState("-/-");
-  // const [JKV,newJKV] = useState("-/-");
- 
-  // const [JHC,newJHC] = useState("-/-");
-  // const [JHT,newJHT] = useState("-/-");
-  // const [JHD,newJHD] = useState("-/-");
-  // const [JHR,newJHR] = useState("-/-");
-  // const [JHV,newJHV] = useState("-/-");
- 
-  // const [KAC,newKAC] = useState("-/-");
-  // const [KAT,newKAT] = useState("-/-");
-  // const [KAD,newKAD] = useState("-/-");
-  // const [KAR,newKAR] = useState("-/-");
-  // const [KAV,newKAV] = useState("-/-");
- 
-  // const [KLC,newKLC] = useState("-/-");
-  // const [KLT,newKLT] = useState("-/-");
-  // const [KLD,newKLD] = useState("-/-");
-  // const [KLR,newKLR] = useState("-/-");
-  // const [KLV,newKLV] = useState("-/-");
- 
-  // const [LDC,newLDC] = useState("-/-");
-  // const [LDT,newLDT] = useState("-/-");
-  // const [LDD,newLDD] = useState("-/-");
-  // const [LDR,newLDR] = useState("-/-");
-  // const [LDV,newLDV] = useState("-/-");
- 
-  // const [MPC,newMPC] = useState("-/-");
-  // const [MPT,newMPT] = useState("-/-");
-  // const [MPD,newMPD] = useState("-/-");
-  // const [MPR,newMPR] = useState("-/-");
-  // const [MPV,newMPV] = useState("-/-");
- 
-  // const [MHC,newMHC] = useState("-/-");
-  // const [MHT,newMHT] = useState("-/-");
-  // const [MHD,newMHD] = useState("-/-");
-  // const [MHR,newMHR] = useState("-/-");
-  // const [MHV,newMHV] = useState("-/-");
- 
-  // const [MNC,newMNC] = useState("-/-");
-  // const [MNT,newMNT] = useState("-/-");
-  // const [MND,newMND] = useState("-/-");
-  // const [MNR,newMNR] = useState("-/-");
-  // const [MNV,newMNV] = useState("-/-");
- 
-  // const [MLC,newMLC] = useState("-/-");
-  // const [MLT,newMLT] = useState("-/-");
-  // const [MLD,newMLD] = useState("-/-");
-  // const [MLR,newMLR] = useState("-/-");
-  // const [MLV,newMLV] = useState("-/-");
- 
-  // const [MZC,newMZC] = useState("-/-");
-  // const [MZT,newMZT] = useState("-/-");
-  // const [MZD,newMZD] = useState("-/-");
-  // const [MZR,newMZR] = useState("-/-");
-  // const [MZV,newMZV] = useState("-/-");
- 
-  // const [NLC,newNLC] = useState("-/-");
-  // const [NLT,newNLT] = useState("-/-");
-  // const [NLD,newNLD] = useState("-/-");
-  // const [NLR,newNLR] = useState("-/-");
-  // const [NLV,newNLV] = useState("-/-");
- 
-  // const [ORC,newORC] = useState("-/-");
-  // const [ORT,newORT] = useState("-/-");
-  // const [ORD,newORD] = useState("-/-");
-  // const [ORR,newORR] = useState("-/-");
-  // const [ORV,newORV] = useState("-/-");
- 
-  // const [PYC,newPYC] = useState("-/-");
-  // const [PYT,newPYT] = useState("-/-");
-  // const [PYD,newPYD] = useState("-/-");
-  // const [PYR,newPYR] = useState("-/-");
-  // const [PYV,newPYV] = useState("-/-");
- 
-  // const [PBC,newPBC] = useState("-/-");
-  // const [PBT,newPBT] = useState("-/-");
-  // const [PBD,newPBD] = useState("-/-");
-  // const [PBR,newPBR] = useState("-/-");
-  // const [PBV,newPBV] = useState("-/-");
- 
-  // const [RJC,newRJC] = useState("-/-");
-  // const [RJT,newRJT] = useState("-/-");
-  // const [RJD,newRJD] = useState("-/-");
-  // const [RJR,newRJR] = useState("-/-");
-  // const [RJV,newRJV] = useState("-/-");
- 
-  // const [SKC,newSKC] = useState("-/-");
-  // const [SKT,newSKT] = useState("-/-");
-  // const [SKD,newSKD] = useState("-/-");
-  // const [SKR,newSKR] = useState("-/-");
-  // const [SKV,newSKV] = useState("-/-");
- 
-  // const [TNC,newTNC] = useState("-/-");
-  // const [TNT,newTNT] = useState("-/-");
-  // const [TND,newTND] = useState("-/-");
-  // const [TNR,newTNR] = useState("-/-");
-  // const [TNV,newTNV] = useState("-/-");
- 
-  // const [TGC,newTGC] = useState("-/-");
-  // const [TGT,newTGT] = useState("-/-");
-  // const [TGD,newTGD] = useState("-/-");
-  // const [TGR,newTGR] = useState("-/-");
-  // const [TGV,newTGV] = useState("-/-");
- 
-  // const [TRC,newTRC] = useState("-/-");
-  // const [TRT,newTRT] = useState("-/-");
-  // const [TRD,newTRD] = useState("-/-");
-  // const [TRR,newTRR] = useState("-/-");
-  // const [TRV,newTRV] = useState("-/-");
- 
-  // const [UPC,newUPC] = useState("-/-");
-  // const [UPT,newUPT] = useState("-/-");
-  // const [UPD,newUPD] = useState("-/-");
-  // const [UPR,newUPR] = useState("-/-");
-  // const [UPV,newUPV] = useState("-/-");
- 
-  // const [UTC,newUTC] = useState("-/-");
-  // const [UTT,newUTT] = useState("-/-");
-  // const [UTD,newUTD] = useState("-/-");
-  // const [UTR,newUTR] = useState("-/-");
-  // const [UTV,newUTV] = useState("-/-");
- 
-  // const [WBC,newWBC] = useState("-/-");
-  // const [WBT,newWBT] = useState("-/-");
-  // const [WBD,newWBD] = useState("-/-");
-  // const [WBR,newWBR] = useState("-/-");
-  // const [WBV,newWBV] = useState("-/-");
- 
- 
- 
-  // async function getstate(){
-  //    const jsondata = await fetch("https://api.covid19india.org/v4/min/data.min.json");
-  //    const jsdata = await jsondata.json()
-  //    newanc(jsdata.AN.total.confirmed)
-  //    newant(jsdata.AN.total.tested)
-  //    newand(jsdata.AN.total.deceased)
-  //    newanv(jsdata.AN.total.vaccinated)
-  //    newanr(jsdata.AN.total.recovered)
- 
- 
- 
-  //    newapc(jsdata.AP.total.confirmed)
-  //    newapt(jsdata.AP.total.tested)
-  //    newapd(jsdata.AP.total.deceased)
-  //    newapv(jsdata.AP.total.vaccinated)
-  //    newapr(jsdata.AP.total.recovered)
- 
-  //    newarc(jsdata.AR.total.confirmed)
-  //    newart(jsdata.AR.total.tested)
-  //    neward(jsdata.AR.total.deceased)
-  //    newarv(jsdata.AR.total.vaccinated)
-  //    newarr(jsdata.AR.total.recovered)
+  
  
   //    newasc(jsdata.AS.total.confirmed)
   //    newast(jsdata.AS.total.tested)
@@ -508,284 +302,284 @@ function States() {
               </thead>
   <tbody>
               <tr >
-                <td>Andaman and Nicobar Islands</td>
-                <td>anc</td>
-                <td>anr</td>
-                <td>ant</td>
-                <td>and</td>
-                <td>anv</td>
+                <td id="And">Andaman and Nicobar Islands</td>
+                <td id="anc"></td>
+                <td id="anr"></td>
+                <td id="ant"></td>
+                <td id="and"></td>
+                <td id="anv"></td>
               </tr>
               <tr >
-              <td>Andhra Pradesh</td>
-              <td>apc</td>
-                <td>apr</td>
-                <td>apt</td>
-                <td>apd</td>
-                <td>apv</td>
+              <td id="And">Andhra Pradesh</td>
+              <td id="apc"></td>
+                <td id="apr"></td>
+                <td id="apt"></td>
+                <td id="apd"></td>
+                <td id="apv"></td>
               </tr>
               <tr >
-              <td>Arunachal Pradesh</td>
-              <td>arc</td>
-                <td>arr</td>
-                <td>art</td>
-                <td>ard</td>
-                <td>arv</td>
+              <td id="Aru">Arunachal Pradesh</td>
+              <td id="arc"></td>
+                <td id="arr"></td>
+                <td id="art"></td>
+                <td id="ard"></td>
+                <td id="arv"></td>
               </tr>
               <tr >
-              <td>Assam</td>
-              <td>asc</td>
-                <td>asr</td>
-                <td>ast</td>
-                <td>asd</td>
-                <td>asv</td>
+              <td id="Ass">Assam</td>
+              <td id="asc"></td>
+                <td id="asr"></td>
+                <td id="ast"></td>
+                <td id="asd"></td>
+                <td id="asv"></td>
               </tr>
               <tr >
-              <td>Bihar</td>
-              <td>BRC</td>
-                <td>BRR</td>
-                <td>BRT</td>
-                <td>BRD</td>
-                <td>BRV</td>
+              <td id="Bih">Bihar</td>
+              <td id="BRC"></td>
+                <td id="BRR"></td>
+                <td id="BRT"></td>
+                <td id="BRD"></td>
+                <td id="BRV"></td>
               </tr>
               <tr >
-              <td>Chandigarh</td>
-              <td>CHC</td>
-                <td>CHR</td>
-                <td>CHT</td>
-                <td>CHD</td>
-                <td>CHV</td>
+              <td id="Cha">Chandigarh</td>
+              <td id="CHC"></td>
+                <td id="CHR"></td>
+                <td id="CHT"></td>
+                <td id="CHD"></td>
+                <td id="CHV"></td>
               </tr>
               <tr >
-              <td>Chhattisgarh</td>
-              <td>CTC</td>
-                <td>CTR</td>
-                <td>CTT</td>
-                <td>CTD</td>
-                <td>CTV</td>
+              <td id="Chh">Chhattisgarh</td>
+              <td id="CTC"></td>
+                <td id="CTR"></td>
+                <td id="CTT"></td>
+                <td id="CTD"></td>
+                <td id="CTV"></td>
               </tr>
               <tr >
-              <td>Dadra and Nagar Haveli</td>
-              <td>DNC</td>
-                <td>DNR</td>
-                <td>DNT</td>
-                <td>DND</td>
-                <td>DNV</td>
+              <td id="Dad">Dadra and Nagar Haveli</td>
+              <td id="DNC"></td>
+                <td id="DNR"></td>
+                <td id="DNT"></td>
+                <td id="DND"></td>
+                <td id="DNV"></td>
               </tr>
               <tr >
-              <td>Delhi</td>
-              <td>DLC</td>
-                <td>DLR</td>
-                <td>DLT</td>
-                <td>DLD</td>
-                <td>DLV</td>
+              <td id="Del">Delhi</td>
+              <td id="DLC"></td>
+                <td id="DLR"></td>
+                <td id="DLT"></td>
+                <td id="DLD"></td>
+                <td id="DLV"></td>
               </tr>
               <tr >
-              <td>Goa</td>
-              <td>GAC</td>
-                <td>GAR</td>
-                <td>GAT</td>
-                <td>GAD</td>
-                <td>GAV</td>
+              <td id="Goa">Goa</td>
+              <td id="GAC"></td>
+                <td id="GAR"></td>
+                <td id="GAT"></td>
+                <td id="GAD"></td>
+                <td id="GAV"></td>
               </tr>
               <tr >
-              <td>Gujarat</td>
-              <td>GJC</td>
-                <td>GJR</td>
-                <td>GJT</td>
-                <td>GJD</td>
-                <td>GJV</td>
+              <td id="Guj">Gujarat</td>
+              <td id="GJC"></td>
+                <td id="GJR"></td>
+                <td id="GJT"></td>
+                <td id="GJD"></td>
+                <td id="GJV"></td>
               </tr>
               <tr >
-              <td>Haryana</td>
-              <td>HRC</td>
-                <td>HRR</td>
-                <td>HRT</td>
-                <td>HRD</td>
-                <td>HRV</td>
+              <td id="Har">Haryana</td>
+              <td id="HRC"></td>
+                <td id="HRR"></td>
+                <td id="HRT"></td>
+                <td id="HRD"></td>
+                <td id="HRV"></td>
               </tr>
               <tr >
-              <td>Himachal Pradesh</td>
-              <td>HPC</td>
-                <td>HPR</td>
-                <td>HPT</td>
-                <td>HPD</td>
-                <td>HPV</td>
+              <td id="Him">Himachal Pradesh</td>
+              <td id="HPC"></td>
+                <td id="HPR"></td>
+                <td id="HPT"></td>
+                <td id="HPD"></td>
+                <td id="HPV"></td>
               </tr>
               <tr >
-              <td>Jammu and Kashmir</td>
-              <td>JKC</td>
-                <td>JKR</td>
-                <td>JKT</td>
-                <td>JKD</td>
-                <td>JKV</td>
+              <td id="Jam">Jammu and Kashmir</td>
+              <td id="JKC"></td>
+                <td id="JKR"></td>
+                <td id="JKT"></td>
+                <td id="JKD"></td>
+                <td id="JKV"></td>
               </tr>
               <tr >
-              <td>Jharkhand</td>
-              <td>JHC</td>
-                <td>JHR</td>
-                <td>JHT</td>
-                <td>JHD</td>
-                <td>JHV</td>
+              <td id="Jha">Jharkhand</td>
+              <td id="JHC"></td>
+                <td id="JHR"></td>
+                <td id="JHT"></td>
+                <td id="JHD"></td>
+                <td id="JHV"></td>
               </tr>
               <tr >
-              <td>Karnataka</td>
-              <td>KAC</td>
-                <td>KAR</td>
-                <td>KAT</td>
-                <td>KAD</td>
-                <td>KAV</td>
+              <td id="Kar">Karnataka</td>
+              <td id="KAC"></td>
+                <td id="KAR"></td>
+                <td id="KAT"></td>
+                <td id="KAD"></td>
+                <td id="KAV"></td>
               </tr>
               <tr >
-              <td>Kerala</td>
-              <td>KLC</td>
-                <td>KLR</td>
-                <td>KLT</td>
-                <td>KLD</td>
-                <td>KLV</td>
+              <td id="Ker">Kerala</td>
+              <td id="KLC"></td>
+                <td id="KLR"></td>
+                <td id="KLT"></td>
+                <td id="KLD"></td>
+                <td id="KLV"></td>
               </tr>
               <tr >
-              <td>Lakshadweep</td>
-              <td>LDC</td>
-                <td>LDR</td>
-                <td>LDT</td>
-                <td>LDD</td>
-                <td>LDV</td>
+              <td id="Lak">Lakshadweep</td>
+              <td id="LDC"></td>
+                <td id="LDR"></td>
+                <td id="LDT"></td>
+                <td id="LDD"></td>
+                <td id="LDV"></td>
               </tr>
               <tr >
-              <td>Madhya Pradesh</td>
-              <td>MPC</td>
-                <td>MPR</td>
-                <td>MPT</td>
-                <td>MPD</td>
-                <td>MPV</td>
+              <td id="Mad">Madhya Pradesh</td>
+              <td id="MPC"></td>
+                <td id="MPR"></td>
+                <td id="MPT"></td>
+                <td id="MPD"></td>
+                <td id="MPV"></td>
               </tr>
               <tr >
-              <td>Maharastra</td>
-              <td>MHC</td>
-                <td>MHR</td>
-                <td>MHT</td>
-                <td>MHD</td>
-                <td>MHV</td>
+              <td id="Mah">Maharastra</td>
+              <td id="MHC"></td>
+                <td id="MHR"></td>
+                <td id="MHT"></td>
+                <td id="MHD"></td>
+                <td id="MHV"></td>
               </tr>
               <tr >
-              <td>Manipur</td>
-              <td>MNC</td>
-                <td>MNR</td>
-                <td>MNT</td>
-                <td>MND</td>
-                <td>MNV</td>
+              <td id="Man">Manipur</td>
+              <td id="MNC"></td>
+                <td id="MNR"></td>
+                <td id="MNT"></td>
+                <td id="MND"></td>
+                <td id="MNV"></td>
               </tr>
               <tr >
-              <td>Meghalaya</td>
-              <td>MLC</td>
-                <td>MLR</td>
-                <td>MLT</td>
-                <td>MLD</td>
-                <td>MLV</td>
+              <td id="Meg">Meghalaya</td>
+              <td id="MLC"></td>
+                <td id="MLR"></td>
+                <td id="MLT"></td>
+                <td id="MLD"></td>
+                <td id="MLV"></td>
               </tr>
               <tr >
-              <td>Mizoram</td>
-              <td>MZC</td>
-                <td>MZR</td>
-                <td>MZT</td>
-                <td>MZD</td>
-                <td>MZV</td>
+              <td id="Miz">Mizoram</td>
+              <td id="MZC"></td>
+                <td id="MZR"></td>
+                <td id="MZT"></td>
+                <td id="MZD"></td>
+                <td id="MZV"></td>
               </tr>
               <tr >
-              <td>Nagaland</td>
-              <td>NLC</td>
-                <td>NLR</td>
-                <td>NLT</td>
-                <td>NLD</td>
-                <td>NLV</td>
+              <td id="Nag">Nagaland</td>
+              <td id="NLC"></td>
+                <td id="NLR"></td>
+                <td id="NLT"></td>
+                <td id="NLD"></td>
+                <td id="NLV"></td>
               </tr>
               <tr >
-              <td>Odisha</td>
-              <td>ORC</td>
-                <td>ORR</td>
-                <td>ORT</td>
-                <td>ORD</td>
-                <td>ORV</td>
+              <td id="Odi">Odisha</td>
+              <td id="ORC"></td>
+                <td id="ORR"></td>
+                <td id="ORT"></td>
+                <td id="ORD"></td>
+                <td id="ORV"></td>
               </tr>
               <tr >
-              <td>Puducherry</td>
-              <td>PYC</td>
-                <td>PYR</td>
-                <td>PYT</td>
-                <td>PYD</td>
-                <td>PYV</td>
+              <td id="Pud">Puducherry</td>
+              <td id="PYC"></td>
+                <td id="PYR"></td>
+                <td id="PYT"></td>
+                <td id="PYD"></td>
+                <td id="PYV"></td>
               </tr>
               <tr >
-              <td>Punjab</td>
-              <td>PBC</td>
-                <td>PBR</td>
-                <td>PBT</td>
-                <td>PBD</td>
-                <td>PBV</td>
+              <td id="Pun">Panjab</td>
+              <td id="PBC"></td>
+                <td id="PBR"></td>
+                <td id="PBT"></td>
+                <td id="PBD"></td>
+                <td id="PBV"></td>
               </tr>
               <tr >
-              <td>Rajasthan</td>
-              <td>RJC</td>
-                <td>RJR</td>
-                <td>RJT</td>
-                <td>RJD</td>
-                <td>RJV</td>
+              <td id="Raj">Rajasthan</td>
+              <td id="RJC"></td>
+                <td id="RJR"></td>
+                <td id="RJT"></td>
+                <td id="RJD"></td>
+                <td id="RJV"></td>
               </tr>
               <tr >
-              <td>Sikkim</td>
-              <td>SKC</td>
-                <td>SKR</td>
-                <td>SKT</td>
-                <td>SKD</td>
-                <td>SKV</td>
+              <td id="Sik">Sikkim</td>
+              <td id="SKC"></td>
+                <td id="SKR"></td>
+                <td id="SKT"></td>
+                <td id="SKD"></td>
+                <td id="SKV"></td>
               </tr>
               <tr >
-              <td>Tamil Nadu</td>
-              <td>TNC</td>
-                <td>TNR</td>
-                <td>TNT</td>
-                <td>TND</td>
-                <td>TNV</td>
+              <td id="Tam">Tamil Nadu</td>
+              <td id="TNC"></td>
+                <td id="TNR"></td>
+                <td id="TNT"></td>
+                <td id="TND"></td>
+                <td id="TNV"></td>
               </tr>
               <tr >
-              <td>Telangana</td>
-              <td>TGC</td>
-                <td>TGR</td>
-                <td>TGT</td>
-                <td>TGD</td>
-                <td>TGV</td>
+              <td id="Tel">Telangana</td>
+              <td id="TGC"></td>
+                <td id="TGR"></td>
+                <td id="TGT"></td>
+                <td id="TGD"></td>
+                <td id="TGV"></td>
               </tr>
               <tr >
-              <td>Tripura</td>
-              <td>TRC</td>
-                <td>TRR</td>
-                <td>TRT</td>
-                <td>TRD</td>
-                <td>TRV</td>
+              <td id="Tri">Tripura</td>
+              <td id="TRC"></td>
+                <td id="TRR"></td>
+                <td id="TRT"></td>
+                <td id="TRD"></td>
+                <td id="TRV"></td>
               </tr>
               <tr >
-              <td>Uttar Pradesh</td>
-              <td>UPC</td>
-                <td>UPR</td>
-                <td>UPT</td>
-                <td>UPD</td>
-                <td>UPV</td>
+              <td id="Utt">Uttar Pradesh</td>
+              <td id="UPC"></td>
+                <td id="UPR"></td>
+                <td id="UPT"></td>
+                <td id="UPD"></td>
+                <td id="UPV"></td>
               </tr>
               <tr >
-              <td>Uttarakhand	</td>
-              <td>UTC</td>
-                <td>UTR</td>
-                <td>UTT</td>
-                <td>UTD</td>
-                <td>UTV</td>
+              <td id="Utt">Uttarakhand	</td>
+              <td id="UTC"></td>
+                <td id="UTR"></td>
+                <td id="UTT"></td>
+                <td id="UTD"></td>
+                <td id="UTV"></td>
               </tr>
               <tr >
-              <td>West Bengal</td>
-              <td>WBC</td>
-                <td>WBR</td>
-                <td>WBT</td>
-                <td>WBD</td>
-                <td>WBV</td>
+              <td id="Wes">West Bengal</td>
+              <td id="WBC"></td>
+                <td id="WBR"></td>
+                <td id="WBT"></td>
+                <td id="WBD"></td>
+                <td id="WBV"></td>
               </tr>
               
               </tbody>
