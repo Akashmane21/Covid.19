@@ -288,21 +288,22 @@ function States() {
           {/* <table  class ="table table-dark table-striped" id="myTable1">
               <tr class="header"> */}
 
-
-              <table id="myTable1">
+              <div class="table-responsive">
+              <table id="myTable1" class="table">
   <thead>
     <tr >
-                <th >State</th>
-                <th >confirmed</th>
-                <th >recovered</th>
-                <th >tested</th>
-                <th >deceased</th>
-                <th >vaccinated</th>
+                <th scope="col">State</th>
+                <th scope="col">confirmed</th>
+                <th scope="col">recovered</th>
+                <th scope="col">tested</th>
+                <th scope="col">deceased</th>
+                <th scope="col">vaccinated</th>
               </tr>
               </thead>
   <tbody>
               <tr >
-                <td id="And">Andaman and Nicobar Islands</td>
+              <th scope="row">Andaman and Nicobar Islands</th>
+                {/* <td id="And">Andaman and Nicobar Islands</td> */}
                 <td id="anc"></td>
                 <td id="anr"></td>
                 <td id="ant"></td>
@@ -310,7 +311,8 @@ function States() {
                 <td id="anv"></td>
               </tr>
               <tr >
-              <td id="And">Andhra Pradesh</td>
+              <th scope="row">Andaman and Nicobar Islands</th>
+
               <td id="apc"></td>
                 <td id="apr"></td>
                 <td id="apt"></td>
@@ -318,7 +320,8 @@ function States() {
                 <td id="apv"></td>
               </tr>
               <tr >
-              <td id="Aru">Arunachal Pradesh</td>
+              <th scope="row">Arunachal Pradesh</th>
+
               <td id="arc"></td>
                 <td id="arr"></td>
                 <td id="art"></td>
@@ -326,7 +329,8 @@ function States() {
                 <td id="arv"></td>
               </tr>
               <tr >
-              <td id="Ass">Assam</td>
+              <th scope="row">Assam</th>
+
               <td id="asc"></td>
                 <td id="asr"></td>
                 <td id="ast"></td>
@@ -334,7 +338,8 @@ function States() {
                 <td id="asv"></td>
               </tr>
               <tr >
-              <td id="Bih">Bihar</td>
+              <th scope="row">Bihar</th>
+
               <td id="BRC"></td>
                 <td id="BRR"></td>
                 <td id="BRT"></td>
@@ -342,7 +347,8 @@ function States() {
                 <td id="BRV"></td>
               </tr>
               <tr >
-              <td id="Cha">Chandigarh</td>
+              <th scope="row">Chandigarh</th>
+
               <td id="CHC"></td>
                 <td id="CHR"></td>
                 <td id="CHT"></td>
@@ -350,7 +356,8 @@ function States() {
                 <td id="CHV"></td>
               </tr>
               <tr >
-              <td id="Chh">Chhattisgarh</td>
+              <th scope="row">Chhattisgarh</th>
+
               <td id="CTC"></td>
                 <td id="CTR"></td>
                 <td id="CTT"></td>
@@ -358,7 +365,8 @@ function States() {
                 <td id="CTV"></td>
               </tr>
               <tr >
-              <td id="Dad">Dadra and Nagar Haveli</td>
+              <th scope="row">Dadra and Nagar Haveli</th>
+
               <td id="DNC"></td>
                 <td id="DNR"></td>
                 <td id="DNT"></td>
@@ -366,7 +374,8 @@ function States() {
                 <td id="DNV"></td>
               </tr>
               <tr >
-              <td id="Del">Delhi</td>
+              <th scope="row">Delhi</th>
+
               <td id="DLC"></td>
                 <td id="DLR"></td>
                 <td id="DLT"></td>
@@ -374,7 +383,8 @@ function States() {
                 <td id="DLV"></td>
               </tr>
               <tr >
-              <td id="Goa">Goa</td>
+              <th scope="row">Goa</th>
+
               <td id="GAC"></td>
                 <td id="GAR"></td>
                 <td id="GAT"></td>
@@ -382,7 +392,8 @@ function States() {
                 <td id="GAV"></td>
               </tr>
               <tr >
-              <td id="Guj">Gujarat</td>
+              <th scope="row">Gujarat</th>
+
               <td id="GJC"></td>
                 <td id="GJR"></td>
                 <td id="GJT"></td>
@@ -390,7 +401,8 @@ function States() {
                 <td id="GJV"></td>
               </tr>
               <tr >
-              <td id="Har">Haryana</td>
+              <th scope="row">Haryana</th>
+
               <td id="HRC"></td>
                 <td id="HRR"></td>
                 <td id="HRT"></td>
@@ -584,7 +596,7 @@ function States() {
               
               </tbody>
 </table>
-
+</div>
 
    </>
   );

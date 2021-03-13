@@ -8,9 +8,9 @@ function Slider() {
           <div class="carousel-item active">
             <img class="d-block w-100" src="https://gumlet.assettype.com/newslaundry/2020-04/c3d2c928-4536-4361-aac4-21a6eba5c5f7/coronaindia.jpg?w=1200&h=675" alt="First slide" />        </div>
             <div class="carousel-item">
-            <img class="d-block w-100" src="          https://media.defense.gov/2020/Mar/09/2002261406/-1/-1/0/200309-D-HN545-003.JPG" alt="Third slide">
+            <img class="d-block w-100" src="https://media.defense.gov/2020/Mar/09/2002261406/-1/-1/0/200309-D-HN545-003.JPG" alt="Third slide">
          </img> </div>
-         
+
           <div class="carousel-item">
             <img class="d-block w-100" src="https://i.vimeocdn.com/video/867061656_640x360.jpg" alt="Third slide">
          </img> </div>
