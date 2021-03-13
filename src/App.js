@@ -44,7 +44,7 @@ function App() {
         <h5> Stay Home🏡 Stay Safe💕</h5> <br />
         <strong>Let's fight with Corona together! 😷</strong>
       </div>
-
+    <div class="about">  Made with ♡ by <strong>Mane Akash</strong></div>
       <ScrollableTabsButtonForce />
 
       <div class="map">
