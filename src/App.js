@@ -54,7 +54,7 @@ function App() {
         </h4>
         <img id="map" src={map} alt="" />
       </div>
-      <img  id="vacc" src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/covid_19_d_660_011020043810.jpg" alt="" />
+      {/* <img  id="vacc" src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/covid_19_d_660_011020043810.jpg" alt="" /> */}
 
       <div class="table">
         <thead><tr><th colspan="2"><center><strong>DO's and DON'Ts</strong></center></th></tr></thead>
@@ -124,7 +124,7 @@ function App() {
         </p>
           <hr />
           <h3>With Lots of Love</h3>
-          <a class="text-white" href="https://akashmane21.github.io/Akash/">
+          <a class="text-white" href="https://akash-mane.netlify.app/">
             {" "}
             <h4> Mane Akash </h4>
           </a>
